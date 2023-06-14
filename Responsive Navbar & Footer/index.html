@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Navbar & Footer</title>
+  </head>
+  <body>
+    <nav>
+      <!-- logo -->
+      <h1>Logo</h1>
+      <!-- <img src="assets/Logo.png" width="80px" alt="logo" /> -->
+      <!-- HAMBURGER LINES -->
+      <div class="hamburger">
+        <span class="lines"></span>
+        <span class="lines"></span>
+        <span class="lines"></span>
+      </div>
+
+      <!-- LINKS -->
+      <ul id="nav-links" class="navbar">
+        <li><a href="#" class="links">Home</a></li>
+        <li><a href="#" class="links">About</a></li>
+        <li><a href="#" class="links">Blogs</a></li>
+        <li><a href="#" class="links">Gallery</a></li>
+        <li><a href="#" class="links">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- age Calculator    -->
+
+    <h1>Age Calculator</h1>
+    <section class="mainCenter">
+      <div class="container">
+        <div class="input">
+          <label for="birthdate">Enter Your Birthdate : </label>
+          <input type="date" id="birthdate" />
+        </div>
+        <ul class="ageUl">
+          <li><span class="details" id="years"></span> Years</li>
+          <li><span class="details" id="months"></span> Months</li>
+          <li><span class="details" id="days"></span> Days</li>
+          <li><span class="details" id="hours"></span> Hours</li>
+          <li><span class="details" id="minutes"></span> Minutes</li>
+          <li><span class="details" id="seconds"></span> Seconds</li>
+        </ul>
+        <div class="btns">
+          <button onclick="calculate()">Calculate</button>
+          <button onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <!-- COLUMNS 1 -->
+        <div class="col-1 content-columns">
+          <h2>Logo</h2>
+          <ul>
+            <li><i class="fa-solid fa-map"></i> Tamilnadu, India</li>
+            <li><i class="fa-solid fa-phone"></i> 9876543210</li>
+            <li><i class="fa-solid fa-envelope"></i> mrlittlestar@gmail.com</li>
+            <li><i class="fa-solid fa-globe"></i>www.mrlittlestar.com</li>
+          </ul>
+        </div>
+        <!-- COLUMNS 2 -->
+        <div class="col-2 content-columns">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <!-- COLUMNS 3 -->
+        <div class="col-3 content-columns">
+          <h3>Our Services</h3>
+          <ul>
+            <li>Web Design</li>
+            <li>Web Development</li>
+            <li>Product Management</li>
+            <li>Marketing</li>
+            <li>Graphic Design</li>
+          </ul>
+        </div>
+        <!-- COLUMNS 4 -->
+        <div class="col-4 content-columns">
+          <h3>Our Newletter</h3>
+          <div class="col-4-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab,
+              vitae?
+            </p>
+            <!-- SEARCH INPUT -->
+            <div class="search-input">
+              <input type="email" placeholder="Email" />
+              <input type="button" value="Subscribe" />
+            </div>
+            <!-- SOCIAL LINKS -->
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="year"></span> MrLittleStar. All rights reserved.</p>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/81d73e8e4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
